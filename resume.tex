@@ -1,15 +1,15 @@
 \documentclass[]{article}
 
-\usepackage[margin=.5in]{geometry}
+\usepackage[margin=.5in,bottom=0in]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 
 \setlength{\parindent}{0pt}
 \setlist[itemize]{noitemsep,topsep=0pt}
 
-\newcommand{\br}{\vspace{12pt}}
+\newcommand{\br}{\vspace{10pt}}
 \newcommand{\brs}{\vspace{3pt}}
-\newcommand{\hr}{\brs\hrule\brs}
+\newcommand{\hr}{\vspace{4pt}\hrule\vspace{4pt}}
 
 \begin{document}
 
@@ -119,14 +119,24 @@ July 2018 - November 2018
 \textbf{PROJECT WORK}
 \hr
 
+\textbf{C99 Compiler}
+\hfill
+February 2021 - May 2021
+\begin{itemize}
+\item Designed a C compiler comprising a lexer (Flex), LALR(1) parser (Bison),
+  three-address \\ quad generation, and x86\_64 target code emission
+  implementing most of the C99 standard.
+\end{itemize}
+
+\brs
+
+
 \textbf{Checkers-Playing AI}
 \hfill
 October 2020
 \begin{itemize}
-\item Implemented minimax search with alpha-beta pruning, time-based iterative
-  deepening.
-\item Implemented algorithm in C++ and Chez Scheme, demonstrate similar
-  performance.
+\item Implemented minimax search with alpha-beta pruning, iterative
+  deepening in Scheme and C++.
 \end{itemize}
 
 \brs
@@ -162,8 +172,8 @@ July 2019 - August 2020
 July 2017, July 2018
 \begin{itemize}
 \item Built interactive math exhibits designed for children involving polynomial
-  regressions, \\ pendulum dynamics, the doppler effect, and periodic functions
-  using \\ Javascript (AR.js, Electron), Java/Processing, and Mathematica.
+  regressions, \\ pendulum dynamics, the doppler effect
+  using AR.js, Electron, Processing, and Mathematica.
 \item Won Math Square (2017, 2018), Dynamic Wall (2018), Wolfram Award (2017),
   \\ Augmented Reality (2018), and Math Exploration (2018) categories.
 \end{itemize}
