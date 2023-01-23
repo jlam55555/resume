@@ -1,6 +1,6 @@
 \documentclass[]{article}
 
-\usepackage[margin=.5in,bottom=0in]{geometry}
+\usepackage[margin=1cm,bottom=1cm]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 
@@ -20,10 +20,10 @@
 Software Engineer
 %% TODO: add more to this summary line
 
-\href{mailto:jonlamdev@gmail.com}{\textbf{jonlamdev}@gmail.com} --
+\href{mailto:jlam55555@gmail.com}{\textbf{jlam55555}@gmail.com} --
 \href{https://lambdalambda.ninja}{\textbf{lambdalambda.ninja}} --
 \href{https://github.com/jlam55555}{github.com/\textbf{jlam55555}} --
-\href{https://linkedin.com/in/jonlamdev}{linkedin.com/in/\textbf{jonlamdev}} --
+\href{https://linkedin.com/in/jonlamdev}{linkedin.com/in/\textbf{jlam55555}} --
 New York, NY
 
 \br
@@ -32,36 +32,50 @@ New York, NY
 \textbf{The Cooper Union for the Advancement of Science and Art}
 New York, NY
 \hfill
-Projected May 2022\\
-B.Eng., M.Eng. in Electrical Engineering, Computer Engineering Track;\\
-Minor in Computer Science; Cumulative GPA: 3.98/4.00
+September 2018 - May 2022\\
+M.Eng., B.Eng., in Electrical Engineering, Computer Engineering Track;\\
+Minor in Computer Science; Cumulative GPA: 3.99/4.00
 
 \brs
 
 \textbf{Coursework} Operating Systems, Compilers, Program Analysis, Computer
-Architecture, SICP,\\
-Parallel Programming in CUDA, Cloud Computing, Software Engineering and Large
-System Design,\\
-Cybersecurity, Databases, Communications Networks, Deep Learning, AI, Frequentist ML
+Architecture,\\
+Cloud Computing, Cybersecurity, Databases, Communications Networks, Deep Learning, AI
 
 \brs
 
 \textbf{Activities \& Awards} Math and CS Tutor, Ping Pong Club President, CUCC
 Student Operator, \\ ACM ICPC Participant, IEEE$\times$ACM Club Officer, Norman
-Perry Award, Jesse Sherman Award
+Perry Award, Jesse Sherman Award, \\ Howard Flagg Memorial Prize, Harold S. Goldberg
+Leadership Prize, Henri D. Dickenson Award
 
 \br
 
 \textbf{EXPERIENCE}
 \hr
 
+\textbf{Google Silicon, Pixel TPU Runtime Team}
+Mountain View, CA
+\hfill
+August 2022 - January 2023
+\begin{itemize}
+\item Developed and presented a prototype C++ ``performance HAL'' that significantly reduces \\
+  tail latencies and slightly improves across-the-board latencies when compared to existing runtime.
+\item Developed an generalized Perfetto trace analysis framework to improve performance insights.
+\item Investigated additional opportunities for performance improvements using standard Linux APIs.
+\end{itemize}
+
+\brs
+
 \textbf{University of Michigan, Future of Programming Lab}
 Ann Arbor, MI
 \hfill
-October 2021 - Present
+October 2021 - May 2022
 \begin{itemize}
-\item Currently onboarding for the Hazel project. The Hazel project aims at providing structural\\
-  editing for a modern functional language to improve IDE aids and programming education.
+\item Designed and implemented (mostly performance-related) improvements to evaluation and hole \\
+  instance numbering in Hazel, an experimental live programming environment with typed holes.
+\item Demonstrated an exponential speedup in certain examples due to memoization of environments.
+\item Prototyped the fill-and-resume optimization initially described in Omar et al. (2019).
 \end{itemize}
 
 \brs
@@ -72,7 +86,7 @@ Natick, MA
 May 2021 - August 2021
 \begin{itemize}
 \item Collaborated with two teams to develop a R\&D prototype for a new workflow that bridges\\
-  the existing user-facing workflows.
+  existing user-facing interactive editing workflows.
 \end{itemize}
 
 \brs
@@ -82,8 +96,8 @@ New York, NY
 \hfill
 February 2021 - May 2021
 \begin{itemize}
-\item Taught a section of ECE210: MATLAB Seminar, an introduction to MATLAB with
-  \\ applications from the corequisite course ECE211: Signals and Systems.
+\item Taught and developed materials for ECE210: MATLAB Seminar, an introduction to\\
+  MATLAB with applications from the corequisite course ECE211: Signals and Systems.
 \end{itemize}
 
 \brs
@@ -93,24 +107,8 @@ Bloomfield, CT
 \hfill
 May 2020 - August 2020
 \begin{itemize}
-\item Developed a browser extension to encourage efficient time management for
-  COVID-19\\ work-from-home scenarios with themable ``work personas.'' Won
-  second place intern project.
-\item Refactored redundancies throughout codebase (Angular 9, NgRx, Angular
-  Material) into\\ Angular Modules to improve deployment speed and consistency.
-\end{itemize}
-
-\brs
-
-\textbf{Maverick Scientific LLC, Web Development Freelancer}
-New York, NY
-\hfill
-July 2018 - November 2018
-\begin{itemize}
-\item Designed buying platform for commercial take-home medical kits using Vue
-  and Bootstrap.
-\item Integrated Messenger SDK and Shopify API to streamline communication
-  and payment.
+\item Won second-place intern project for a browser extension that encourages better WFH productivity.
+\item Refactored redundancies in existing Angular projects to improve deployment speed and consistency.
 \end{itemize}
 
 \br
@@ -118,24 +116,33 @@ July 2018 - November 2018
 \textbf{PROJECT WORK}
 \hr
 
+\textbf{Compiler for an untyped lazy pure functional language}
+\hfill
+January 2022 - May 2022
+\begin{itemize}
+\item Implemented a front-end (lexer and LL(1) parser) and two back-ends (template instantiation evaluator \\
+  and G-Machine compiler) in Haskell for a compiler for Core, an untyped Haskell-like toy language.
+\end{itemize}
+
+\brs
+
 \textbf{C99 Compiler}
 \hfill
 February 2021 - May 2021
 \begin{itemize}
-\item Designed a C compiler comprising a lexer (Flex), LALR(1) parser (Bison),
+\item Developed a C compiler comprising a lexer (Flex), LALR(1) parser (Bison),
   three-address \\ quad generation, and x86\_64 target code emission
   implementing most of the C99 standard.
 \end{itemize}
 
 \brs
 
-
 \textbf{Variations on a Scheme: Multiple First-Class Continuations}
 \hfill
 August 2021
 \begin{itemize}
 \item Explored first-class continuation implementations and use cases, and compared to similar constructs.
-\item Extended the call/cc interface in Scheme to support simultaneous continuations using CPS.
+\item Extended the call/cc interface in Scheme to support multiple simultaneous continuations using CPS.
 \end{itemize}
 
 \brs
@@ -144,11 +151,9 @@ August 2021
 \hfill
 November 2020 - December 2020
 \begin{itemize}
-\item Extended the work of Li et al. (2018) to find a lower ``intrinsic
-  dimension'' \\ (minimum parameterization) of the objective landscape of deep
-  neural networks.
-\item Achieved slightly lower intrinsic dimension by using a nonlinear (Fourier
-  coefficients) transform.
+\item Extended the work of Li et al. (2018) to find a lower minimum parameterization of the \\
+  objective landscape of deep neural networks.
+\item Achieved a lower parameterization by using a nonlinear Fourier-coefficients transform.
 \end{itemize}
 
 \brs
@@ -157,24 +162,10 @@ November 2020 - December 2020
 \hfill
 July 2019 - August 2020
 \begin{itemize}
-\item Developed a Linux driver for VEIKK digitizer tablets using USBHID kernel
+\item Developed an open-source Linux driver for VEIKK digitizer tablets using USBHID kernel
   API.
-\item Built C++ configuration tool featuring button, pressure, and screen
-  mappings; \\
-  employs systemd, libevdev, udev, uinput, Qt5, and (q)dbus Linux APIs.
-\end{itemize}
-
-\brs
-
-\textbf{Museum of Mathematics Hackathon}
-\hfill
-July 2017, July 2018
-\begin{itemize}
-\item Built interactive math exhibits designed for children involving polynomial
-  regressions, \\ pendulum dynamics, the doppler effect
-  using AR.js, Electron, Processing, and Mathematica.
-\item Won Math Square (2017, 2018), Dynamic Wall (2018), Wolfram Award (2017),
-  \\ Augmented Reality (2018), and Math Exploration (2018) categories.
+\item Built an accompanying C++ configuration GUI tool featuring button, pressure, and screen \\
+  mappings; employs systemd libevdev, udev, uinput, Qt5, and (q)dbus Linux APIs.
 \end{itemize}
 
 \br
@@ -182,7 +173,7 @@ July 2017, July 2018
 \textbf{TECHNICAL SKILLS}
 \hr
 
-\textbf{Languages} Javascript, C, C++, Go, Python, Java, Scheme, Haskell, OCaml,
+\textbf{Languages} C++, C, Go, Python, Javascript, Java, Scheme, Haskell, OCaml,
 MATLAB, x86\_64 Assembly, Rust, SQL
 
 \brs
